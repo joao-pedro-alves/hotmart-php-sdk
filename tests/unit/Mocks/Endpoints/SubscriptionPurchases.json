@@ -1,0 +1,17 @@
+[
+    {
+        "transaction": "HP12315823516751",
+        "approved_date": 1583331578000,
+        "payment_engine": "HotPay",
+        "status": "APPROVED",
+        "price": {
+            "value": 108.0,
+            "currency_code": "BRL"
+        },
+        "payment_type": "CREDIT_CARD",
+        "payment_method": "VISA_CREDIT_CARD",
+        "recurrency_number": 1,
+        "under_warranty": false,
+        "purchase_subscription": true
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "name": "joao-pedro-alves/hotmart-php-sdk",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Hotmart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hotmart\\Test\\": "tests/unit"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5"
+    }
+}

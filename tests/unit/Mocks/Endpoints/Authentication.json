@@ -1,0 +1,7 @@
+{
+    "access_token": "wxyz",
+    "token_type": "bearer",
+    "expires_in": 172799,
+    "scope": "read write",
+    "jti": "da2eff63-754d-4v76-9b3a-19bdb5cc8f36"
+}

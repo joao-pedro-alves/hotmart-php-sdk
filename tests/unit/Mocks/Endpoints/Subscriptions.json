@@ -1,0 +1,41 @@
+{
+    "items": [
+        {
+            "subscriber_code": "ABC12DEF",
+            "subscription_id": 123456,
+            "status": "ACTIVE",
+            "accession_date": 1577847600,
+            "end_accession_date": 1641005999,
+            "request_date": 1577847600,
+            "date_next_charge": 1580558059,
+            "trial": false,
+            "transaction": "HP16616613605324",
+            "plan": {
+                "name": "Plan name",
+                "id": 726420,
+                "recurrency_period": 30,
+                "max_charge_cycles": 6
+            },
+            "product": {
+                "id": 123456,
+                "name": "Product Name",
+                "ucode": "12a34bcd-56e7-4847-fg89-h1i23j4567l8"
+            },
+            "price": {
+                "value": 123.45,
+                "currency_code": "BRL"
+            },
+            "subscriber": {
+                "name": "Subscriber name",
+                "email": "subscriber@email.com.br",
+                "ucode": "10a98bcd-76e5-4321-fg09-h8i76j5432l1"
+            }
+        }
+    ],
+    "page_info": {
+        "total_results": 30,
+        "next_page_token": "05b60506b659c1c6e728db93eada6271e3adcfb4edf507b679874458e31577b3",
+        "prev_page_token": "cf1fg8bd082e2864069035c057eca0bac7eb5d604719c5a76e80f0933f49c217",
+        "results_per_page": 10
+    }
+}

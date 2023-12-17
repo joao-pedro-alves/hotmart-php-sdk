@@ -1,0 +1,10 @@
+{
+    "status": "INACTIVE",
+    "subscriber_code": "SUBSCRIBER_CODE",
+    "creation_date": "2020-07-20 17:57:42",
+    "interval_between_charges": 30,
+    "shopper": {
+        "email": "shopper@email.com.br",
+        "phone": "(31) 988888888"
+    }
+}

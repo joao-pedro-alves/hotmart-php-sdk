@@ -1,0 +1,27 @@
+{
+    "success_subscriptions": [
+        {
+            "status": "INACTIVE",
+            "subscriber_code": "SUBSCRIBER_CODE",
+            "creation_date": "2020-07-20 17:57:42",
+            "interval_between_charges": 30,
+            "shopper": {
+                "email": "subscriber@email.com",
+                "phone": "(31) 988888888"
+            }
+        }
+    ],
+    "fail_subscriptions": [
+        {
+            "status": "ACTIVE",
+            "error": "SUBSCRIPTION_ALREADY_ACTIVE",
+            "subscriber_code": "SUBSCRIBER_CODE",
+            "creation_date": "2020-07-08 16:35:57",
+            "interval_between_charges": 30,
+            "shopper": {
+                "email": "subscriber2@email.com.",
+                "phone": "(31) 988888888"
+            }
+        }
+    ]
+}

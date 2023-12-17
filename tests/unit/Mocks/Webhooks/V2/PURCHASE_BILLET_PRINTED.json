@@ -1,0 +1,85 @@
+{
+    "id": "6bf0bfab-1e09-44c3-9c90-ede5ba75cdc9",
+    "creation_date": 1694045324429,
+    "event": "PURCHASE_BILLET_PRINTED",
+    "version": "2.0.0",
+    "data": {
+        "product": {
+            "id": 2156955,
+            "ucode": "9d643da0-1b95-4926-be36-4f460252d8e3",
+            "name": "The Gratest Product Ever",
+            "has_co_production": true
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "",
+                "name": ""
+            }
+        ],
+        "buyer": {
+            "email": "joaopedroalv9@gmail.com",
+            "name": "João Pedro Alves",
+            "checkout_phone": "99999999999"
+        },
+        "producer": {
+            "name": "Pawno Ltda"
+        },
+        "commissions": [
+            {
+                "value": 2.74,
+                "source": "MARKETPLACE",
+                "currency_value": "BRL"
+            },
+            {
+                "value": 25.88,
+                "source": "PRODUCER",
+                "currency_value": "BRL"
+            }
+        ],
+        "purchase": {
+            "full_price": {
+                "value": 37.9,
+                "currency_value": "BRL"
+            },
+            "original_offer_price": {
+                "value": 37.9,
+                "currency_value": "BRL"
+            },
+            "price": {
+                "value": 37.9,
+                "currency_value": "BRL"
+            },
+            "offer": {
+                "code": "o01vdsqr"
+            },
+            "checkout_country": {
+                "name": "Brasil",
+                "iso": "BR"
+            },
+            "order_bump": {
+                "is_order_bump": false
+            },
+            "order_date": 1694045319000,
+            "status": "BILLET_PRINTED",
+            "transaction": "HP0490789156",
+            "buyer_ip": "127.0.0.1",
+            "payment": {
+                "installments_number": 1,
+                "type": "PIX",
+                "pix_qrcode": "https://customer-local-latam.ebanx.com/pix/checkout?hash=999999999999999999999999999999999999999999999999",
+                "pix_code": "00020101021226740014br.gov.bcb.pix2552pix.ebanx.com/qr/v2/9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "pix_expiration_date": 1694218120000
+            }
+        },
+        "subscription": {
+            "status": "STARTED",
+            "plan": {
+                "id": 318961,
+                "name": "Mensal"
+            },
+            "subscriber": {
+                "code": "Y1QSAKM1"
+            }
+        }
+    }
+}

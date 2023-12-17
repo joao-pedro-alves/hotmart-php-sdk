@@ -1,0 +1,79 @@
+{
+    "id": "6502d967-e904-4aba-a4d0-6ea9ad7b5a0a",
+    "creation_date": 1694046047360,
+    "event": "PURCHASE_APPROVED",
+    "version": "2.0.0",
+    "data": {
+        "product": {
+            "id": 2156955,
+            "ucode": "9d643da0-1b95-4926-be36-4f460252d8e3",
+            "name": "The Gratest Product Ever",
+            "has_co_production": true
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "",
+                "name": ""
+            }
+        ],
+        "buyer": {
+            "email": "abc@gmail.com",
+            "name": "JOÂO PEDRO ALVES",
+            "checkout_phone": "99999999999"
+        },
+        "producer": {
+            "name": "Pawno Ltda"
+        },
+        "commissions": [
+            {
+                "value": 7.71,
+                "source": "MARKETPLACE",
+                "currency_value": "BRL"
+            },
+            {
+                "value": 124.33,
+                "source": "PRODUCER",
+                "currency_value": "BRL"
+            }
+        ],
+        "purchase": {
+            "approved_date": 1694045953000,
+            "full_price": {
+                "value": 145.85,
+                "currency_value": "BRL"
+            },
+            "original_offer_price": {
+                "value": 145.85,
+                "currency_value": "BRL"
+            },
+            "price": {
+                "value": 145.85,
+                "currency_value": "BRL"
+            },
+            "offer": {
+                "code": "qk3lf5pt"
+            },
+            "checkout_country": {
+                "name": "Brasil",
+                "iso": "BR"
+            },
+            "order_bump": {
+                "is_order_bump": false
+            },
+            "order_date": 1694045951000,
+            "status": "APPROVED",
+            "transaction": "HP0490789156",
+            "buyer_ip": "127.0.0.1",
+            "payment": {
+                "installments_number": 12,
+                "type": "CREDIT_CARD"
+            }
+        },
+        "subscription": {
+            "status": "ACTIVE",
+            "subscriber": {
+                "code": "U1V6RET6"
+            }
+        }
+    }
+}

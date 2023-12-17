@@ -1,0 +1,47 @@
+{
+    "items": [
+        {
+            "subscriber_code": "ABC12DEF",
+            "subscription_id": 1223334,
+            "status": "ACTIVE",
+            "lifetime": 200,
+            "accession_date": 1694113403000,
+            "end_accession_date": 1694113503000,
+            "trial": true,
+            "plan": {
+                "name": "Plan name",
+                "recurrency_period": 180
+            },
+            "product": {
+                "name": "Product name",
+                "id": 12345
+            },
+            "offer": {
+                "code": "o1c97lta"
+            },
+            "last_recurrency": {
+                "number": 2,
+                "request_date": 1694113403000,
+                "status": "NOT_PAID",
+                "transaction_number": 1,
+                "billing_type": "SMART_INSTALLMENT"
+            },
+            "unpaid_recurrencies": [
+                {
+                    "number": 2,
+                    "charge_date": 1694113403000
+                }
+            ],
+            "subscriber": {
+                "name": "John",
+                "id": 12345,
+                "email": "teste@email.com"
+            }
+        }
+    ],
+    "page_info": {
+        "results_per_page": 0,
+        "next_page_token": "05b60506b659c1c6e728db93eada6271e3adcfb4edf507b679874458e31577b3",
+        "prev_page_token": "cf1fg8bd082e2864069035c057eca0bac7eb5d604719c5a76e80f0933f49c217"
+    }
+}

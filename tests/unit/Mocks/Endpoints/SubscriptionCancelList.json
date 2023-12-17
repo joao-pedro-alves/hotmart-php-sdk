@@ -1,0 +1,35 @@
+{
+    "success_subscriptions": [
+        {
+            "status": "INACTIVE",
+            "subscriber_code": "SUBSCRIBER_CODE",
+            "creation_date": "2020-07-20 17:57:42",
+            "current_recurrence": 1,
+            "date_last_recurrence": "2020-07-20 17:57:42",
+            "date_next_charge": "2020-08-24 12:00:00",
+            "due_day": 24,
+            "trial_period": 26,
+            "interval_type_between_charges": "MONTH",
+            "interval_between_charges": 1,
+            "max_charge_cycles": 13,
+            "activation_date": "2020-07-20 17:57:44",
+            "shopper": {
+                "email": "shopper@email.com.br",
+                "phone": "(31) 988888888"
+            }
+        }
+    ],
+    "fail_subscriptions": [
+        {
+            "status": "INACTIVE",
+            "error": "SUBSCRIPTION_ALREADY_CANCELED_OR_OVERDUE",
+            "subscriber_code": "SUBSCRIBER_CODE",
+            "creation_date": "2020-07-08 16:35:57",
+            "interval_between_charges": 30,
+            "shopper": {
+                "email": "shopper2@email.com.br",
+                "phone": "(31) 988888888"
+            }
+        }
+    ]
+}

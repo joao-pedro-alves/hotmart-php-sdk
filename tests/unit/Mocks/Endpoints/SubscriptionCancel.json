@@ -1,0 +1,17 @@
+{
+    "trial_period": "7",
+    "interval_type_between_charges": "MONTH",
+    "activation_date": "2022-02-26 22:49:59",
+    "subscriber_code": "SUBSCRIBER_CODE",
+    "interval_between_charges": 12,
+    "date_next_charge": "2024-03-05 12:00:00",
+    "creation_date": "2022-02-26 22:49:56",
+    "date_last_recurrence": 3,
+    "current_recurrence": 3,
+    "status": "INACTIVE",
+    "due_day": 5,
+    "shopper": {
+        "phone": "(99) 999999999",
+        "email": "a@a.com"
+    }
+}

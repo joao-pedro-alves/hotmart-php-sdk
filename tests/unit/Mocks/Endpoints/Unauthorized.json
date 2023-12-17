@@ -1,0 +1,5 @@
+{
+    "error": "unauthorized",
+    "error_description": "Full authentication is required to access this resource.",
+    "error_uri": "https://developers.hotmart.com/docs/pt-BR/start/http-response-codes/"
+}

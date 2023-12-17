@@ -1,0 +1,76 @@
+{
+    "id": "384d85ba-a99c-455a-8e2c-288ccc60a0bf",
+    "creation_date": 1694001953312,
+    "event": "PURCHASE_REFUNDED",
+    "version": "2.0.0",
+    "data": {
+        "product": {
+            "id": 2156955,
+            "ucode": "9d643da0-1b95-4926-be36-4f460252d8e3",
+            "name": "The Gratest Product Ever",
+            "has_co_production": true
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "",
+                "name": ""
+            }
+        ],
+        "buyer": {
+            "email": "joaopedroalv9@gmail.com",
+            "name": "João Pedro Alves",
+            "checkout_phone": "99999999999"
+        },
+        "producer": {
+            "name": "Pawno Ltda"
+        },
+        "commissions": [
+            {
+                "value": 14.66,
+                "source": "MARKETPLACE",
+                "currency_value": "BRL"
+            },
+            {
+                "value": 259.75,
+                "source": "PRODUCER",
+                "currency_value": "BRL"
+            }
+        ],
+        "purchase": {
+            "approved_date": 1693478015000,
+            "full_price": {
+                "value": 297,
+                "currency_value": "BRL"
+            },
+            "original_offer_price": {
+                "value": 297,
+                "currency_value": "BRL"
+            },
+            "price": {
+                "value": 297,
+                "currency_value": "BRL"
+            },
+            "offer": {
+                "code": "z6ceetek"
+            },
+            "checkout_country": {
+                "name": "Brasil",
+                "iso": "BR"
+            },
+            "order_bump": {
+                "is_order_bump": false
+            },
+            "order_date": 1693477811000,
+            "status": "REFUNDED",
+            "transaction": "HP0490789156",
+            "buyer_ip": "127.0.0.1",
+            "payment": {
+                "installments_number": 1,
+                "type": "PIX",
+                "pix_qrcode": "https://customer-local-latam.ebanx.com/pix/checkout?hash=999999999999999999999999999999999999999999999999",
+                "pix_code": "00020101021226740014br.gov.bcb.pix2552pix.ebanx.com/qr/v2/9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999",
+                "pix_expiration_date": 1693650612000
+            }
+        }
+    }
+}

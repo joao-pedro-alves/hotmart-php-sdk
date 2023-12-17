@@ -1,0 +1,72 @@
+{
+    "id": "31eef0ed-1ff7-4684-84a9-4e47cca1a780",
+    "creation_date": 1694048779221,
+    "event": "PURCHASE_COMPLETE",
+    "version": "2.0.0",
+    "data": {
+        "product": {
+            "id": 2156955,
+            "ucode": "9d643da0-1b95-4926-be36-4f460252d8e3",
+            "name": "The Gratest Product Ever",
+            "has_co_production": true
+        },
+        "affiliates": [
+            {
+                "affiliate_code": "",
+                "name": ""
+            }
+        ],
+        "buyer": {
+            "email": "joaopedroalv9@gmail.com",
+            "name": "JOÂO PEDRO ALVES"
+        },
+        "producer": {
+            "name": "Pawno Ltda"
+        },
+        "commissions": [
+            {
+                "value": 25.85,
+                "source": "MARKETPLACE",
+                "currency_value": "BRL"
+            },
+            {
+                "value": 32.98,
+                "source": "COPRODUCER",
+                "currency_value": "BRL"
+            }
+        ],
+        "purchase": {
+            "approved_date": 1692749840000,
+            "full_price": {
+                "value": 534.75,
+                "currency_value": "BRL"
+            },
+            "original_offer_price": {
+                "value": 497,
+                "currency_value": "BRL"
+            },
+            "price": {
+                "value": 497,
+                "currency_value": "BRL"
+            },
+            "offer": {
+                "code": "3rrhwxvs"
+            },
+            "checkout_country": {
+                "name": "Brasil",
+                "iso": "BR"
+            },
+            "order_bump": {
+                "is_order_bump": false
+            },
+            "order_date": 1692749839000,
+            "status": "COMPLETED",
+            "transaction": "HP0490789156",
+            "buyer_ip": "127.0.0.1",
+            "payment": {
+                "installments_number": 5,
+                "type": "CREDIT_CARD"
+            }
+        }
+    }
+}
