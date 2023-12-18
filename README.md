@@ -18,6 +18,13 @@
         - [Reativar assinatura](#reativar-assinatura)
         - [Reativar lista de assinaturas](#reativar-lista-de-assinaturas)
         - [Alterar dia da cobrança da assinatura](#alterar-dia-da-cobrança-da-assinatura)
+    - [Transações (vendas)](#transações-vendas)
+        - [Histórico de vendas](#histórico-de-vendas)
+        - [Sumário de vendas](#sumário-de-vendas)
+        - [Participantes de vendas](#participantes-de-vendas)
+        - [Comissões de vendas](#comissões-de-vendas)
+        - [Detalhamento de preços de vendas](#detalhamento-de-preços-de-vendas)
+        - [Reembolso de venda](#reembolso-de-venda)
 
 ## Instalação
 
@@ -76,12 +83,7 @@ Operações relacionadas a assinaturas.
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->get($paramsArray);
 ```
 
@@ -91,12 +93,7 @@ $hotmart->subscriptions()->get($paramsArray);
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->summary($paramsArray);
 ```
 
@@ -106,12 +103,7 @@ $hotmart->subscriptions()->summary($paramsArray);
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->purchases($subscriberCode, $paramsArray);
 ```
 
@@ -121,12 +113,7 @@ $hotmart->subscriptions()->purchases($subscriberCode, $paramsArray);
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->cancel($subscriberCode, $paramsArray);
 ```
 
@@ -136,12 +123,7 @@ $hotmart->subscriptions()->cancel($subscriberCode, $paramsArray);
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->cancelList($subscriberCodeArray, $paramsArray);
 ```
 
@@ -151,12 +133,7 @@ $hotmart->subscriptions()->cancelList($subscriberCodeArray, $paramsArray);
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->reactivate($subscriberCode, $paramsArray);
 ```
 
@@ -166,12 +143,7 @@ $hotmart->subscriptions()->reactivate($subscriberCode, $paramsArray);
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->reactivateList($subscriberCodeArray, $paramsArray);
 ```
 
@@ -181,13 +153,72 @@ $hotmart->subscriptions()->reactivateList($subscriberCodeArray, $paramsArray);
 
 ```php
 <?php
-$hotmart = new Hotmart\Client(
-    'a60ea46d-fd4a-48b6-a10b-823a9c3c1a35',
-    '5e7ab2d7-6cd3-2da5-bc6b-45e10ab15021',
-    'LTawYmU4NmQtZmQ0YS00OGI2LWGxMGItODkzYTljM2MxZTM1OjJlN7FhMmQ1LTZkZDctNJRmNS1iZTliLTk1ZTIwYmIxNTB1MX'
-);
-
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->changeChargeDay($subscriberCode, $paramsArray);
 ```
 
 *Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/change-due-day/
+
+### Transações (vendas)
+
+Operações relacionadas as vendas.
+
+#### Histórico de vendas
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->transactions()->history($paramsArray);
+```
+
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-history/
+
+#### Sumário de vendas
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->transactions()->summary($paramsArray);
+```
+
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-summary/
+
+#### Participantes de vendas
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->transactions()->participants($paramsArray);
+```
+
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-users/
+
+#### Comissões de vendas
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->transactions()->commissions($paramsArray);
+```
+
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-commissions/
+
+#### Detalhamento de preços de vendas
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->transactions()->priceDetails($paramsArray);
+```
+
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-price-details/
+
+#### Reembolso de venda
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->transactions()->refund($transactionCode);
+```
+
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-refund/
