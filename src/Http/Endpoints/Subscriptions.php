@@ -2,8 +2,6 @@
 
 namespace Hotmart\Http\Endpoints;
 
-use GuzzleHttp\Exception\RequestException;
-use Hotmart\Exceptions\Http\SubscriptionCancelException;
 use Hotmart\Http\Routes;
 
 class Subscriptions extends Endpoint

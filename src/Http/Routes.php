@@ -61,4 +61,38 @@ class Routes
 
         return $std;
     }
+
+    /**
+     * @return \Hotmart\Anonymous
+     */
+    public static function transactions()
+    {
+        $std = new Anonymous();
+
+        $std->history = static function () {
+            return '/payments/api/v1/sales/history';
+        };
+
+        $std->summary = static function () {
+            return '/payments/api/v1/sales/summary';
+        };
+
+        $std->participants = static function () {
+            return '/payments/api/v1/sales/users';
+        };
+
+        $std->commissions = static function () {
+            return '/payments/api/v1/sales/commissions';
+        };
+
+        $std->priceDetails = static function () {
+            return '/payments/api/v1/sales/price/details';
+        };
+
+        $std->refund = static function ($transactionCode) {
+            return '/payments/api/v1/sales/'.$transactionCode.'/refund';
+        };
+
+        return $std;
+    }
 }

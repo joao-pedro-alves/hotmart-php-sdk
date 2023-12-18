@@ -1,0 +1,37 @@
+{
+    "items": [
+        {
+            "transaction": "HP14916251567230",
+            "product": {
+                "id": 8547854,
+                "name": "product1"
+            },
+            "base": {
+                "value": 930,
+                "currency_code": "MXN"
+            },
+            "total": {
+                "value": 486.25,
+                "currency_code": "MXN"
+            },
+            "vat": {
+                "value": 193.25,
+                "currency_code": "BRL"
+            },
+            "fee": {
+                "value": 55,
+                "currency_code": "USD"
+            },
+            "coupon": {
+                "code": "coupon1",
+                "value": 22.9
+            },
+            "real_conversion_rate": 708.75
+        }
+    ],
+    "page_info": {
+        "total_results": 14,
+        "next_page_token": "eyJyb3dzIjoxMCwicGFnZSI6Mn0=",
+        "results_per_page": 10
+    }
+}

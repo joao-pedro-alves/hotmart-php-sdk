@@ -4,6 +4,7 @@ namespace Hotmart\Http;
 
 use Hotmart\Http\Endpoints\Authentication;
 use Hotmart\Http\Endpoints\Subscriptions;
+use Hotmart\Http\Endpoints\Transactions;
 
 class Client
 {
@@ -38,6 +39,11 @@ class Client
     private $subscriptions;
 
     /**
+     * @var \Hotmart\Http\Endpoints\Subscriptions
+     */
+    private $transactions;
+
+    /**
      * @param string $clientId
      * @param string $clientSecret
      * @param string $clientBasic
@@ -57,6 +63,7 @@ class Client
 
         $this->authentication = new Authentication($this, $this->http);
         $this->subscriptions = new Subscriptions($this, $this->http);
+        $this->transactions = new Transactions($this, $this->http);
     }
 
     /**
@@ -65,6 +72,14 @@ class Client
     public function subscriptions()
     {
         return $this->subscriptions;
+    }
+
+    /**
+     * @return \Hotmart\Http\Endpoints\Transactions
+     */
+    public function transactions()
+    {
+        return $this->transactions;
     }
 
     /**

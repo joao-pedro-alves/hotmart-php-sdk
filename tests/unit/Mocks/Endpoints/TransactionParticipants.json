@@ -1,0 +1,50 @@
+{
+    "items": [
+        {
+            "transaction": "HP10014546320130",
+            "product": {
+                "name": "Product 1",
+                "id": 178598
+            },
+            "users": [
+                {
+                    "role": "PRODUCER",
+                    "user": {
+                        "ucode": "c9e5e3f4-097e-11e4-be45-22000b409f8a",
+                        "locale": "FR",
+                        "name": "Producer Name",
+                        "trade_name": "Producer Trade Name",
+                        "cellphone": "1199999999",
+                        "phone": "6825565681",
+                        "email": "producerEmail@email.com",
+                        "documents": [
+                            {
+                                "value": "564654",
+                                "type": "DOCUMENT"
+                            },
+                            {
+                                "value": "68658197646",
+                                "type": "CPF"
+                            }
+                        ],
+                        "address": {
+                            "city": "Campo Grande",
+                            "state": "Campo Grande",
+                            "country": "Brasil",
+                            "zip_code": "1213454",
+                            "address": "Rua Carlos Fortunato Paiva",
+                            "complement": "",
+                            "neighborhood": "",
+                            "number": "123"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "page_info": {
+        "total_results": 55,
+        "next_page_token": "eyJwYWdlIjoyLCJyb3dzIjozfQ==",
+        "results_per_page": 1
+    }
+}

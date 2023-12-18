@@ -1,0 +1,51 @@
+{
+    "items": [
+        {
+            "transaction": "HP12345678901234",
+            "product": {
+                "name": "Product Test",
+                "id": 123456
+            },
+            "exchange_rate_currency_payout": 0.001334000000,
+            "commissions": [
+                {
+                    "commission": {
+                        "currency_value": "USD",
+                        "value": 95.00
+                    },
+                    "user": {
+                        "ucode": "1c2fbe3a-e4cb-56ec-b7e8-b9c0f1a234f4",
+                        "name": "Name User Producer Test"
+                    },
+                    "source": "PRODUCER"
+                },
+                {
+                    "commission": {
+                        "currency_value": "USD",
+                        "value": 4.35
+                    },
+                    "user": {
+                        "ucode": "1c2fbe3a-e4cb-56ec-b7e8-b9c0f1a234f5",
+                        "name": "Name User Coproducer Test"
+                    },
+                    "source": "COPRODUCER"
+                },
+                {
+                    "commission": {
+                        "currency_value": "USD",
+                        "value": 0.65
+                    },
+                    "user": {
+                        "ucode": "1c2fbe3a-e4cb-56ec-b7e8-b9c0f1a234f6",
+                        "name": "Name User Addon Test"
+                    },
+                    "source": "ADDON"
+                }
+            ]
+        }
+    ],
+    "page_info": {
+        "total_results": 10,
+        "results_per_page": 10
+    }
+}
