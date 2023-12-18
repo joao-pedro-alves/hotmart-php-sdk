@@ -10,6 +10,13 @@
 - [API](#api)
     - [Assinaturas](#assinaturas)
         - [Obter assinaturas](#obter-assinaturas)
+        - [Sumário de assinaturas](#sumário-de-assinaturas)
+        - [Compras de assinantes](#compras-de-assinantes)
+        - [Cancelar assinatura](#cancelar-assinatura)
+        - [Cancelar lista de assinaturas](#cancelar-lista-de-assinaturas)
+        - [Reativar assinatura](#reativar-assinatura)
+        - [Reativar lista de assinaturas](#reativar-lista-de-assinaturas)
+        - [Alterar dia da cobrança da assinatura](#alterar-dia-da-cobrança-da-assinatura)
 
 ## Instalação
 
@@ -73,9 +80,9 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->get($paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscribers/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscribers/
 
-### Sumário de assinaturas
+#### Sumário de assinaturas
 
 ```php
 <?php
@@ -88,9 +95,9 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->summary($paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-summary/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-summary/
 
-### Compras de assinantes
+#### Compras de assinantes
 
 ```php
 <?php
@@ -103,9 +110,9 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->purchases($subscriberCode, $paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-purchases/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-purchases/
 
-### Cancelar assinatura
+#### Cancelar assinatura
 
 ```php
 <?php
@@ -118,9 +125,9 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->cancel($subscriberCode, $paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscription/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscription/
 
-### Cancelar lista de assinaturas
+#### Cancelar lista de assinaturas
 
 ```php
 <?php
@@ -133,9 +140,9 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->cancelList($subscriberCodeArray, $paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscriptions/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscriptions/
 
-### Reativar assinatura
+#### Reativar assinatura
 
 ```php
 <?php
@@ -148,9 +155,9 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->reactivate($subscriberCode, $paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscription/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscription/
 
-### Reativar lista de assinaturas
+#### Reativar lista de assinaturas
 
 ```php
 <?php
@@ -163,9 +170,9 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->reactivateList($subscriberCodeArray, $paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscriptions/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscriptions/
 
-### Alterar dia da cobrança da assinatura
+#### Alterar dia da cobrança da assinatura
 
 ```php
 <?php
@@ -178,4 +185,4 @@ $hotmart = new Hotmart\Client(
 $hotmart->subscriptions()->changeChargeDay($subscriberCode, $paramsArray);
 ```
 
-**Referência documentação:** https://developers.hotmart.com/docs/pt-BR/v1/subscription/change-due-day/
+*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/change-due-day/
