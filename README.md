@@ -6,6 +6,7 @@
 ## Índice
 
 - [Instalação](#instalação)
+- [Testes](#testes)
 - [Configuração](#configuração)
 - [API](#api)
     - [Assinaturas](#assinaturas)
@@ -23,6 +24,10 @@
 Instale a biblioteca utilizando o comando
 
 `composer require joao-pedro-alves/hotmart-php-sdk`
+
+## Testes
+
+`docker compose run php vendor/bin/phpunit`
 
 ## Configuração
 
