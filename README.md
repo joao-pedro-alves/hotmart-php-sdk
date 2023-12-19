@@ -1,7 +1,8 @@
 # Hotmart PHP SDK
-## Em construção...
 
----
+Biblioteca criada para viabilizar de forma simples a utilização das funcionalidades da API da Hotmart em projetos em PHP.
+
+É altamente recomendado acessar a documentação oficial da [API da Hotmart](https://developers.hotmart.com/docs/pt-BR/) antes de utilizar essa biblioteca.
 
 ## Índice
 
@@ -25,6 +26,11 @@
         - [Comissões de vendas](#comissões-de-vendas)
         - [Detalhamento de preços de vendas](#detalhamento-de-preços-de-vendas)
         - [Reembolso de venda](#reembolso-de-venda)
+    - [Área de membros](#área-de-membros)
+        - [Obter módulos](#obter-módulos)
+        - [Obter páginas de um módulo](#obter-páginas-de-um-módulo)
+        - [Obter usuários](#obter-usuários)
+        - [Obter progresso de um usuário](#obter-progresso-de-um-usuário)
 
 ## Instalação
 
@@ -87,7 +93,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->get($paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscribers/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscribers/)
 
 #### Sumário de assinaturas
 
@@ -97,7 +103,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->summary($paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-summary/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-summary/)
 
 #### Compras de assinantes
 
@@ -107,7 +113,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->purchases($subscriberCode, $paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-purchases/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/get-subscription-purchases/)
 
 #### Cancelar assinatura
 
@@ -117,7 +123,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->cancel($subscriberCode, $paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscription/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscription/)
 
 #### Cancelar lista de assinaturas
 
@@ -127,7 +133,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->cancelList($subscriberCodeArray, $paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscriptions/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/cancel-subscriptions/)
 
 #### Reativar assinatura
 
@@ -137,7 +143,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->reactivate($subscriberCode, $paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscription/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscription/)
 
 #### Reativar lista de assinaturas
 
@@ -147,7 +153,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->reactivateList($subscriberCodeArray, $paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscriptions/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/reactivate-subscriptions/)
 
 #### Alterar dia da cobrança da assinatura
 
@@ -157,7 +163,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->subscriptions()->changeChargeDay($subscriberCode, $paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/subscription/change-due-day/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/subscription/change-due-day/)
 
 ### Transações (vendas)
 
@@ -171,7 +177,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->transactions()->history($paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-history/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-history/)
 
 #### Sumário de vendas
 
@@ -181,7 +187,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->transactions()->summary($paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-summary/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-summary/)
 
 #### Participantes de vendas
 
@@ -191,7 +197,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->transactions()->participants($paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-users/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-users/)
 
 #### Comissões de vendas
 
@@ -201,7 +207,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->transactions()->commissions($paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-commissions/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-commissions/)
 
 #### Detalhamento de preços de vendas
 
@@ -211,7 +217,7 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->transactions()->priceDetails($paramsArray);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-price-details/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-price-details/)
 
 #### Reembolso de venda
 
@@ -221,4 +227,48 @@ $hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
 $hotmart->transactions()->refund($transactionCode);
 ```
 
-*Referência documentação:* https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-refund/
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/sales/sales-refund/)
+
+### Área de membros
+
+Operações relacionadas as informações da área de membros.
+
+#### Obter módulos
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->club()->modules('NOME_DO_SUBDOMINIO', $paramsArray);
+```
+
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/club/get-modules-club/)
+
+#### Obter páginas de um módulo
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->club()->modulePages($subDomain, $moduleId);
+```
+
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/club/get-pages-club/)
+
+#### Obter usuários
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->club()->users($subDomain);
+```
+
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/club/get-users-club/)
+
+#### Obter progresso de um usuário
+
+```php
+<?php
+$hotmart = new Hotmart\Client('CLIENT_ID', 'CLIENT_SECRET', 'CLIENT_BASIC');
+$hotmart->club()->userLessons($subDomain, $userId);
+```
+
+[Ver documentação](https://developers.hotmart.com/docs/pt-BR/v1/club/get-lessons-club/)

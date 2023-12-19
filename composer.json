@@ -1,6 +1,24 @@
 {
     "name": "joao-pedro-alves/hotmart-php-sdk",
+    "description": "Biblioteca em PHP para utilização da API da Hotmart",
     "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/joao-pedro-alves/hotmart-php-sdk",
+    "keywords": [
+        "hotmart",
+        "api",
+        "sdk",
+        "php",
+        "pagamentos"
+    ],
+    "authors": [
+        {
+            "name": "João Pedro Alves",
+            "email": "joaopedroalv9@gmail.com",
+            "homepage": "https://github.com/joao-pedro-alves",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Hotmart\\": "src/"
@@ -17,5 +35,11 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^7.5"
+    },
+    "scripts": {
+        "test": [
+            "@composer install",
+            "vendor/bin/phpunit"
+        ]
     }
 }
