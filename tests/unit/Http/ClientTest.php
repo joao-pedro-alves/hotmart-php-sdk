@@ -7,6 +7,7 @@ use Hotmart\Test\BaseTestCase;
 use Hotmart\Http\Endpoints\Transactions;
 use Hotmart\Http\Endpoints\Subscriptions;
 use Hotmart\Http\Endpoints\Authentication;
+use Hotmart\Http\Endpoints\Club;
 
 class ClientTest extends BaseTestCase
 {
@@ -38,6 +39,12 @@ class ClientTest extends BaseTestCase
     {
         $this->assertTrue(method_exists($this->client, 'authentication'));
         $this->assertInstanceOf(Authentication::class, $this->client->authentication());
+    }
+
+    public function test_get_Club_instance()
+    {
+        $this->assertTrue(method_exists($this->client, 'club'));
+        $this->assertInstanceOf(Club::class, $this->client->club());
     }
 
     public function test_get_credentials()

@@ -1,0 +1,75 @@
+{
+    "items": [
+        {
+            "user_id": "n2OM623n46",
+            "engagement": "NONE",
+            "name": "Hotmart Example User One",
+            "email": "user.one@hotmart.com",
+            "last_access_date": 1546728645,
+            "role": "FREE_STUDENT",
+            "first_access_date": 1607054711,
+            "locale": "pt_BR",
+            "plus_access": "WITHOUT_PLUS_ACCESS",
+            "progress": {
+                "completed_percentage": 45,
+                "total": 11,
+                "completed": 5
+            },
+            "status": "ACTIVE",
+            "access_count": 1,
+            "is_deletable": true,
+            "class_id": "qV7y1Jm7Jn",
+            "type": "FREE"
+        },
+        {
+            "user_id": "ZYOmWXlded",
+            "engagement": "LOW",
+            "name": "Hotmart Example User Two",
+            "email": "user.two@hotmart.com",
+            "last_access_date": 1819975825,
+            "role": "STUDENT",
+            "first_access_date": 1532627687,
+            "locale": "pt_BR",
+            "plus_access": "WITHOUT_PLUS_ACCESS",
+            "progress": {
+                "completed_percentage": 0,
+                "total": 11,
+                "completed": 0
+            },
+            "status": "ACTIVE",
+            "purchase_date": 1616501263,
+            "access_count": 2,
+            "is_deletable": true,
+            "class_id": "qV7y1Jm7Jn",
+            "type": "BUYER"
+        },
+        {
+            "user_id": "wx7WpWrQO2",
+            "engagement": "MEDIUM",
+            "name": "Hotmart Example User Three",
+            "email": "user.three@hotmart.com",
+            "last_access_date": 1278881901,
+            "role": "STUDENT",
+            "first_access_date": 1607054711,
+            "locale": "pt_BR",
+            "plus_access": "WITHOUT_PLUS_ACCESS",
+            "progress": {
+                "completed_percentage": 0,
+                "total": 11,
+                "completed": 0
+            },
+            "status": "BLOCKED",
+            "purchase_date": 1616501263,
+            "access_count": 1,
+            "is_deletable": true,
+            "class_id": "qV7y1Jm7Jn",
+            "type": "IMPORTED"
+        }
+    ],
+    "page_info": {
+        "total_results": 111,
+        "next_page_token": "eyJwYWdlIjoyLCJyb3dzIjoxMH0=",
+        "prev_page_token": "eyJwYWdlIjoyLCJyb3dzIjoxMH0=",
+        "results_per_page": 3
+    }
+}

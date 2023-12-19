@@ -17,7 +17,7 @@ abstract class BaseTestCase extends TestCase
      */
     protected static function jsonMock($mockName)
     {
-        return file_get_contents(__DIR__ . "/Http/Endpoints/Mocks/Endpoints/$mockName.json");
+        return file_get_contents(__DIR__ . "/Mocks/Endpoints/$mockName.json");
     }
 
     /**

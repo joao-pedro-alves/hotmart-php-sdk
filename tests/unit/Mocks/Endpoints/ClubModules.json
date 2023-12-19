@@ -1,0 +1,62 @@
+[
+    {
+        "module_id": "2z7ramxejw",
+        "name": "Hotmart Club - Module 1",
+        "sequence": 1,
+        "is_extra": false,
+        "is_extra_paid": false,
+        "is_public": false,
+        "classes": [
+            "qV7y1Jm7Jn"
+        ],
+        "total_pages": 2
+    },
+    {
+        "module_id": "j14okvB4pL",
+        "name": "Hotmart Club - Module 2",
+        "sequence": 2,
+        "is_extra": false,
+        "is_extra_paid": false,
+        "is_public": true,
+        "classes": [
+            "qV7y1Jm7Jn"
+        ],
+        "total_pages": 4
+    },
+    {
+        "module_id": "v94JMxYOgZ",
+        "name": "Hotmart Club - Module 3",
+        "sequence": 3,
+        "is_extra": false,
+        "is_extra_paid": false,
+        "is_public": false,
+        "classes": [
+            "qV7y1Jm7Jn"
+        ],
+        "total_pages": 3
+    },
+    {
+        "module_id": "d64l09Q4jW",
+        "name": "Hotmart Club - Module 4",
+        "sequence": 4,
+        "is_extra": false,
+        "is_extra_paid": false,
+        "is_public": false,
+        "classes": [
+            "qV7y1Jm7Jn"
+        ],
+        "total_pages": 1
+    },
+    {
+        "module_id": "DPeA5MoeWE",
+        "name": "Hotmart Club - Module Dripping",
+        "sequence": 5,
+        "is_extra": false,
+        "is_extra_paid": false,
+        "is_public": true,
+        "classes": [
+            "qV7y1Jm7Jn"
+        ],
+        "total_pages": 3
+    }
+]

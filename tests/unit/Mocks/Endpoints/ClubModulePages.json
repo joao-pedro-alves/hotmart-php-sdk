@@ -1,0 +1,41 @@
+[
+    {
+        "liberation_days": 100,
+        "name": "Dripping 100 days",
+        "total_comments": 0,
+        "liberation_type": "BY_DAYS",
+        "page_order": 1,
+        "days_of_duration": 120,
+        "has_media": false,
+        "type": "CONTENT",
+        "has_duration": true
+    },
+    {
+        "name": "Dripping  BY_DATE",
+        "liberation_date": 1585278000000,
+        "liberation_type": "BY_DATE",
+        "page_order": 2,
+        "type": "CONTENT",
+        "total_comments": 5,
+        "has_media": false,
+        "has_duration": false,
+        "rates": [
+            {
+                "rate": 3,
+                "total": 1
+            },
+            {
+                "rate": 5,
+                "total": 1
+            }
+        ]
+    },
+    {
+        "page_order": 3,
+        "type": "ADVERTISEMENT",
+        "has_media": false,
+        "name": "Offer product",
+        "has_duration": false,
+        "total_comments": 0
+    }
+]
