@@ -1,11 +1,12 @@
 <?php
 
-namespace Hotmart\Test\Endpoints;
+namespace Hotmart\Test\Http\Endpoints;
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Handler\MockHandler;
 use Hotmart\Exceptions\HotmartException;
 use Hotmart\Http\Endpoints\Subscriptions;
+use Hotmart\Test\BaseTestCase;
 
 class SubscriptionsTest extends BaseTestCase
 {

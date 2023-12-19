@@ -95,4 +95,30 @@ class Routes
 
         return $std;
     }
+
+    /**
+     * @return \Hotmart\Anonymous
+     */
+    public static function club()
+    {
+        $std = new Anonymous();
+
+        $std->modules = static function () {
+            return '/club/api/v1/modules';
+        };
+
+        $std->modulePages = static function ($moduleId) {
+            return '/club/api/v1/modules/'.$moduleId.'/pages';
+        };
+
+        $std->users = static function () {
+            return '/club/api/v1/users';
+        };
+
+        $std->userLessons = static function ($userId) {
+            return '/club/api/v1/users/' . $userId . '/lessons';
+        };
+
+        return $std;
+    }
 }

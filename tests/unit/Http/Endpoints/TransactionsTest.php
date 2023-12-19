@@ -1,11 +1,12 @@
 <?php
 
-namespace Hotmart\Test\Endpoints;
+namespace Hotmart\Test\Http\Endpoints;
 
+use Hotmart\Http\Routes;
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Handler\MockHandler;
 use Hotmart\Http\Endpoints\Transactions;
-use Hotmart\Http\Routes;
+use Hotmart\Test\BaseTestCase;
 
 class TransactionsTest extends BaseTestCase
 {

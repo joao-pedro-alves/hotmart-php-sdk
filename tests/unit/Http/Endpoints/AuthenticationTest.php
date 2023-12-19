@@ -1,8 +1,9 @@
 <?php
 
-namespace Hotmart\Test\Endpoints;
+namespace Hotmart\Test\Http\Endpoints;
 
 use GuzzleHttp\Psr7\Response;
+use Hotmart\Test\BaseTestCase;
 use GuzzleHttp\Handler\MockHandler;
 use Hotmart\Http\Endpoints\Authentication;
 

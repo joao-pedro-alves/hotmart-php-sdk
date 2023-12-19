@@ -1,11 +1,12 @@
 <?php
-namespace Hotmart\Test\Endpoints;
+namespace Hotmart\Test\Http\Endpoints;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
 use Hotmart\Http\ResponseHandler;
 use Hotmart\Exceptions\HotmartException;
 use GuzzleHttp\Exception\ClientException;
+use Hotmart\Test\BaseTestCase;
 
 class ResponseHandlerTest extends BaseTestCase
 {

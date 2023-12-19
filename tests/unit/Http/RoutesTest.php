@@ -1,7 +1,8 @@
 <?php
-namespace Hotmart\Test\Endpoints;
+namespace Hotmart\Test\Http;
 
 use Hotmart\Http\Routes;
+use Hotmart\Test\BaseTestCase;
 
 class RoutesTest extends BaseTestCase
 {
@@ -65,5 +66,26 @@ class RoutesTest extends BaseTestCase
         $this->assertObjectHasAttribute('refund', $routes);
         $this->assertIsCallable($routes->refund);
         $this->assertEquals('/payments/api/v1/sales/abc/refund', $routes->refund('abc'));  
+    }
+
+    public function test_club_routes()
+    {
+        $routes = Routes::club();
+
+        $this->assertObjectHasAttribute('modules', $routes);
+        $this->assertIsCallable($routes->modules);
+        $this->assertEquals('/club/api/v1/modules', $routes->modules());
+
+        $this->assertObjectHasAttribute('modulePages', $routes);
+        $this->assertIsCallable($routes->modulePages);
+        $this->assertEquals('/club/api/v1/modules/MODULE_ID/pages', $routes->modulePages('MODULE_ID'));
+
+        $this->assertObjectHasAttribute('users', $routes);
+        $this->assertIsCallable($routes->users);
+        $this->assertEquals('/club/api/v1/users', $routes->users());
+
+        $this->assertObjectHasAttribute('userLessons', $routes);
+        $this->assertIsCallable($routes->users);
+        $this->assertEquals('/club/api/v1/users/USER_ID/lessons', $routes->userLessons('USER_ID'));
     }
 }
